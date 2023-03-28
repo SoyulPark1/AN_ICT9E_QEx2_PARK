@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Itim&family=Roboto+Slab&display=swap" rel="stylesheet">
+	<title>Q4 Exercise2</title>
+<body>
+<style type="text/css">
+		h1, h2, h3{
+			padding: 10px;
+			font-family: 'Indie Flower', cursive;
+			font-family: 'Itim', cursive;
+			font-family: 'Roboto Slab', serif;
+		}
+		.container{
+			padding: 25px;
+		}
+		body{
+			background: url(https://c4.wallpaperflare.com/wallpaper/966/672/905/javascript-minimalism-wallpaper-preview.jpg);
+		
+		}
+		p{
+			font-family: 'Indie Flower', cursive;
+			font-family: 'Itim', cursive;
+			font-family: 'Roboto Slab', serif;
+
+		}
+	</style>
+</head>
+<body>
+	<div class="container bg-light">
+	<h1 class="text-dark text-center" style="background-color: #f7df1e; color: ;">Introduction of JavaScript</h1>
+	<p class="text-center">Bring Bootstrap to life with our optional JavaScript plugins built on jQuery. Learn about each plugin, our data and programmatic API options, and more.</p>
+	<div class="row">
+		<div class="col-4">
+			<img width="100%" src="https://storage.googleapis.com/oa_disk001/obangeles/68/documents/class-814/folder-5698/1679964514-347.png">
+	</div>
+	<div class="col-8" width="100%">
+		<p>JavaScript is a versatile language that serves as a fundamental tool for implementing complex and dynamic features on web pages. Whenever a web page goes beyond the static display of information and requires interactive components, real-time updates, animated graphics, or media playback, JavaScript is often the go-to solution. As the third layer of the standard web technologies "layer cake," complementing HTML and CSS, JavaScript offers a powerful and flexible programming paradigm that enables developers to create rich and engaging web experiences.</p>
+		<p>JavaScript, the versatile scripting language used for developing interactive and dynamic web pages, was first created by Brendan Eich in 1995. As it gained popularity, it was standardized by the European Computer Manufacturers Association (ECMA), and its official specification was named ECMA-262. This standard provides a comprehensive definition of the syntax, semantics, and behavior of the language, which is widely known as ECMAScript and is the primary language used for scripting web pages and other applications.</p><br>
+	</div>
+	<br>
+	<div class="col-8">
+		<h2>Types of JavaScript and Syntax</h2>
+		<h3>Internal JavaScript</h3>
+		<p>Internal JavaScript refers to code that is embedded directly within an HTML document using the < script > tag. This type of JavaScript code can be placed in the head or body section of an HTML document and is executed when the document is loaded or when a specified event occurs. Internal JavaScript code is typically used for smaller, one-off scripts that are specific to a particular web page, such as form validation or simple animations. While internal JavaScript can be a convenient and quick solution for small tasks, larger or more complex scripts may benefit from being separated into external files for improved organization, reuse, and maintainability.</p>
+	</div>
+	<div class="col-8">
+		<h3>External Javascript</h3>
+		<p>External JavaScript refers to code that is written in a separate .js file and linked to an HTML document using the < script > tag's "src" attribute. This type of JavaScript code can be included in multiple pages of a website, making it a more efficient and maintainable approach for larger, more complex scripts. By separating the code into external files, it can be more easily reused across different pages and applications, and changes to the script can be made in a central location without requiring updates to each individual web page. Additionally, external JavaScript files can be cached by the browser, reducing the amount of data that needs to be downloaded when a page is loaded and improving performance</p>
+	</div>
+	<div class="col-8">
+		<h3>JavaScript Guidelines</h3>
+		<p id="demo"></p>
+	<script>
+		document.getElementById("demo").innerHTML = ("Things you need to now before using Javascript");//innerHTML
+	</script>
+	<script>
+		const myElement = document.getElementById("demo");
+		myElement.style.color = "red";
+	</script>
+
+		<ul>1. Naming covention and declaration</ul>
+		<ul>2. Rules for use of white space, indentation and comments</ul>
+		<ul>3. Programming practices and principles</ul>
+	</div>
+<div class="col-4">
+		<img width="100%" src="https://i.imgflip.com/6quqku.jpg">
+	</div>
+	<div class="col-8">
+	<script>
+		document.write("<h2>Types of JavaScript comments</h2><p>Comments in JavaScript are used to explain and clarify code for developers.</p>");
+	</script>
+		<h3>Single line</h3>
+		<p>In JavaScript, a single-line comment is a type of code annotation that allows developers to include notes or explanations within their code that are ignored by the JavaScript interpreter. Single-line comments start with two forward slashes (//) and continue until the end of the line. Any text following the // is not executed as code and is instead treated as a comment. Single-line comments can be used to provide context or explanations for code, temporarily disable code for testing purposes, or to add reminders to update code in the future. Since they are ignored by the interpreter, single-line comments do not affect the functionality of the code and are purely for the benefit of the developer.</p>
+	</div>
+	<div class="col-8">
+	<h3>Multi-line</h3>
+		<p>In JavaScript, multi-line comments, also known as block comments, are another type of code annotation that allows developers to include longer comments or explanations within their code that span multiple lines. Multi-line comments start with /* and end with */ and can contain any number of lines of text in between. Unlike single-line comments, which only comment out a single line, multi-line comments can be used to comment out entire blocks of code or provide detailed explanations of complex algorithms. Multi-line comments are also ignored by the JavaScript interpreter and do not affect the functionality of the code. However, they can be useful for communicating information about the code to other developers who may be working on the same project or reviewing the code.</p>
+	</div>
+
+
+	<div class="col-8">
+		<h2>DOM</h2>
+		<h3>What is DOM?</h3>
+		<p>The Document Object Model (DOM) in JavaScript is a programming interface for web documents that provides a structured representation of the HTML or XML content of a web page. It defines a tree-like structure of the HTML elements, where each element is a node in the tree, with the root of the tree being the document object</p>
+		<p>The DOM provides a set of methods and properties that allow developers to access and manipulate the content of a web page, such as adding or removing elements, changing the content of elements, or responding to user events like clicks or input. By using JavaScript to manipulate the content of the DOM, developers can create dynamic, interactive web pages that provide a better user experience.</p>
+		<p>The DOM is an essential part of modern web development, and a solid understanding of its structure and capabilities is essential for developing modern web applications. By using the DOM in JavaScript, developers can create rich, engaging web applications that provide a better user experience and make the web a more dynamic and interactive place.</p>
+	</div>
+	<div class="col-4">
+		<img width="100%" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/DOM-model.svg/330px-DOM-model.svg.png">
+	</div>
+
+	<div class="col-4">
+		<img width="100%" src="https://storage.googleapis.com/oa_disk001/obangeles/68/documents/class-814/folder-5698/1679964513-114.png">
+	</div>
+	<div class="col-8">
+		<h2>Types of DOM in JavaScript</h2>
+		<h3>InnerHTML</h3>
+		<p>InnerHTML is a property of the Document Object Model (DOM) in JavaScript that allows developers to access or modify the HTML content of an element. It is a string property that contains the HTML content of the element, including any child elements, text, or attributes.Using innerHTML, developers can modify the HTML content of an element dynamically, such as adding new content, removing existing content, or changing the styling or structure of the content. The innerHTML property can also be used to read the content of an element, allowing developers to access the data entered by the user in form fields.</p>
+	</div>
+	<div class="col-4">
+		<img width="100%" src="https://storage.googleapis.com/oa_disk001/obangeles/68/documents/class-814/folder-5698/1679964512-2236.png">
+	</div>
+	<div class="col-8">
+		<h3>document.write()</h3>
+		<p>document.write() is a method in JavaScript that allows developers to dynamically write content to an HTML document while it is being loaded or displayed. It is a part of the Document Object Model (DOM) in JavaScript, which represents the structure of an HTML document as a tree of objects that can be accessed and manipulated through JavaScript.When document.write() is called, it writes the specified content directly into the HTML document at the location where the script is included. This means that the content can be displayed as the page is being loaded or when the script is executed, without requiring any additional DOM manipulation.</p>
+	</div>
+	<div class="col-4">
+		<img width="100%" src="https://storage.googleapis.com/oa_disk001/obangeles/68/documents/class-814/folder-5698/1679964511-1923.png">
+	</div>
+	<div class="col-8">
+		<h3>window.alert()</h3>
+		<p>dwindow.alert() is a method in JavaScript that displays an alert box with a message to the user. It is a part of the Window object, which represents the window that contains a DOM document.The alert() method is often used to display important information or warning messages to the user. When called, it displays a modal dialog box with the specified message and an "OK" button. The user cannot interact with the page until they close the alert box by clicking the "OK" button.</p><br>
+ </div>
+	<script> 
+		window.alert("This is all about Javascript");//window.alert
+	</script>
+</div>
+<button onclick="myFunction()">References</button>
+<br><br>
+<script>
+	document.write()
+</script>
+<script>
+		function myFunction(){
+			document.write('References:<br> <a href="https://storage.googleapis.com/oa_disk001/obangeles/68/documents/class-814/folder-5698/1679964514-347.png">official javascript logo</a> <br> <a href="https://i.imgflip.com/6quqku.jpg">Javascript meme</a> <br> <a href="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/DOM-model.svg/330px-DOM-model.svg.png">DMO</a> <br> <a href="https://storage.googleapis.com/oa_disk001/obangeles/68/documents/class-814/folder-5698/1679964513-114.png">innerHTML</a> <br> <a href="https://storage.googleapis.com/oa_disk001/obangeles/68/documents/class-814/folder-5698/1679964512-2236.png">document.write</a> <br> <a href="https://storage.googleapis.com/oa_disk001/obangeles/68/documents/class-814/folder-5698/1679964511-1923.png">window.alert</a>')
+		}
+</script>
+
+
+<footer> <small>&copy; Sypark2023 </small></footer>
+</body>
+</html>
